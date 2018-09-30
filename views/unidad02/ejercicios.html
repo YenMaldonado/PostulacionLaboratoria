@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicios</title>
+  <script type="text/javascript" src="../../js/Practicas/app.js"></script>
+  <link rel="stylesheet" href="../../css/master.css">
+</head>
+
+<body>
+  <!--inicia titulo-->
+  <div class="margen">
+
+    <div class="encabezado">
+      <span class="encabezado1">Unidad02 </span> <br>
+      <span class="encabezado2">Ejercicio Final</span>
+    </div>
+    <!--instrucciones-->
+    <div class="realizar">
+      <h2>Ejercicio 1- Coin Converter</h2>
+      <p>
+        Escribe una función con el nombre coinConverter que convierte el
+        valor de dólares a soles peruanos, pesos mexicano y pesos chilenos.
+        Utiliza las tasas de cambio siguientes:
+      </p>
+      <!-- tabla de datos a utilizar-->
+      <ul>
+        <li>soles = dólares &#42; 3.25</li>
+        <li>pesosMexicanos = dólares &#42; 18</li>
+        <li>pesosChilenos = dólares &#42; 660</li>
+      </ul>
+
+      <div class="boton">
+      </div>
+      <button type="button" name="button" onclick="simulador_oculto('convertidor')">MOSTRAR</button>
+
+
+      <!--inicia simulador de consola-->
+      <div id="convertidor" style="display:none">
+        <div class="simulador_code">
+          <pre>
+          <code>
+            module.exports = function coinConvert(usDollars=50) {
+            var arr = [];
+            var peruvianSoles=usDollars*3.25;
+            var mexicanPesos=usDollars*18;
+            var chileanPesos=usDollars*660;
+
+            arr.push(peruvianSoles);
+
+            arr.push(mexicanPesos);
+
+            arr.push(chileanPesos);
+            console.log(peruvianSoles, mexicanPesos, chileanPesos);
+            return arr;
+            };
+
+          </code>
+          </pre>
+        </div>
+        <div class="boton">
+          <button type="button" onclick="ejecutaCoinConvert()" id="ejecutar1">Ejecutar</button>
+          <br>
+          <br>
+          <div id="Resultado">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--finaliza simulador-->
+
+
+    <!--ejercicio 2-->
+    <!--cuenta de restaurante-->
+    <div class="realizar">
+      <h2>Ejercicio 2- Cuenta de restaurante</h2>
+
+      <p>
+        Imagina que has salido a comer con tus cuatro mejores amigas.
+        La cuenta total del consumo es de 50 dólares, pero a eso debes
+        agregarle el 10% de Impuesto al Valor Agregado (IVA).
+        Quieres dividir la cuenta equitativamente entre las cinco.
+        Para eso has creado este programa.<br>
+        Sigue los pasos a continuación para que completes el programa
+        y determines cuánto debe pagar cada una.
+      </p>
+      <ol>
+        <li>Crea una variable llamada tax (impuesto en inglés) y asígnale
+          el resultado de multiplicar bill por 10%. Tip: 10% en decimal
+          se escribe 0.10</li>
+        <li>Crea una variable llamada total y asígnale el resultado de
+          sumar bill más tax</li>
+        <li>Retorna el monto que cada una debe pagar (total divido entre 5),
+          con símbolo $ adelante (por ejemplo: $11). Tip: debes usar string
+          concatenation para imprimir con el símbolo $ adelante.</li>
+      </ol>
+
+      <button type="button" name="button" onclick="simulador_oculto('cuenta')">MOSTRAR</button>
+      <div id="cuenta" style="display:none">
+        <div class="simulador_code">
+          <pre>
+            <code>
+              module.exports = function restaurantBill(bill=50) {
+              var tax=bill*0.10;
+              var total=bill+tax;
+              console.log(total/5 +'$')
+              return '$'+ total/5;
+              };
+            </code>
+            </pre>
+        </div>
+        <div class="boton">
+          <button type="button" onclick="ejecuta_restaurantBill()" id="ejecutar2">Ejecutar</button>
+          <br>
+          <br>
+          <div id="Resultado2">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="iconos">
+    <table width="100%">
+      <tr>
+        <td width="33%"><a href="index.html"><img src="../../img/flechaRetorno.png" width="35px" height="35px"></a></td>
+        <td width="33%"><a href="../../index.html"><img src="../../img/inicio.png" width="35px" height="35px"></a></td>
+        <td width="33%"></td>
+      </tr>
+
+      <tr>
+        <td width="33%">Unidad 02</td>
+        <td width="33%">Menú Principal</td>
+        <td width="33%"></td>
+      </tr>
+    </table>
+    </div>
+  <!--<span class="regresar"> Regresar a menu Unidad 02 <a href="index.html"> <img src="../../img/inicio.png" width="35px" height="35px"></a></span>-->
+
+</body>
+
+</html>

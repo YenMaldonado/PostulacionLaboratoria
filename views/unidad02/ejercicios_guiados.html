@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicios Guiados</title>
+  <link rel="stylesheet" href="../../css/master.css">
+</head>
+
+<body>
+  <!--inicio de titulo-->
+  <div class="margen">
+
+    <div class="encabezado">
+      <!--<span class="encabezado1">Unidad02 </span>
+      <span class="encabezado2">Ejercicios Guiados</span>-->
+      Unidad02
+      Ejercicios Guiados
+    </div>
+    <!--indicaciones-->
+    <p>
+      Ahora que ya conoces ciertos conceptos base de la programación,
+      es hora de que veas las cosas que puedes crear en la práctica.
+    </p>
+
+    Los proyectos a crear son:
+    <br>
+    <!--ejercicio1-->
+    <ol>
+      <div class="realizar">
+        <b>Edad en segundos:</b> Crea una web que pida al usuario su edad
+        en años, utilizando prompt(), y devuelva su edad en segundos,
+        utilizando document.write(). <br>
+        <button type="button" name="button" onclick="simulador_oculto('Edad_segundos')">MOSTRAR</button>
+        <div id="Edad_segundos" style="display:none">
+          <div class="ejercicio_ejecutable">
+            <div class="simulador_code">
+              <pre>
+                    <code>
+var age= parseInt(prompt("¿Cuál es tu edad?"));
+var ageInSeconds= age*365*24*60*60;
+console.log(ageInSeconds)
+document.write(" Tu edad es " +age + " años " + "
+Y en segundos sería "+ ageInSeconds);
+                    </code>
+                  </pre>
+            </div>
+            <button type="button" onclick="ejercicio1()">Ejecutar</button>
+          </div>
+        </div>
+      </div>
+      <!--ejercicio2-->
+      <div class="realizar">
+        <b>Convertidor de temperatura:</b> Crea una web que pida al
+        usuario la temperatura en grados Celsius (°C), utilizando
+        prompt(), y devuelva, en la consola, la temperatura en grados
+        Farenheit (°F) utilizando console.log().
+        La fórmula matemática para pasar de °C a °F es:
+        T(°F) = ( T(°C) × 1.8 ) + 32 <br>
+        <button type="button" name="button" onclick="simulador_oculto('convertidor')">MOSTRAR</button>
+        <div id="convertidor" style="display:none">
+          <div class="ejercicio_ejecutable">
+            <div class="simulador_code">
+              <pre>
+                   <code>
+var temperature= parseInt(prompt("¿Cuál es la Temperatura en celsius?"));
+var convertToFarenheit= (temperature*1.8)+32;
+
+console.log("La Temperatura en Farenheit es "+convertToFarenheit);
+document.write("La Temperatura en Farenheit es "+convertToFarenheit);
+
+                   </code>
+                 </pre>
+            </div>
+            <button type="button" onclick="ejercicio2()">Ejecutar</button>
+          </div>
+        </div>
+      </div>
+      <!--ejercicio3-->
+      <div class="realizar">
+        <b>Ganancias y pérdidas:</b> Crea un programa que pide los ingresos,
+        los costos y el % de impuestos, y calcula la ganancia después
+        de impuestos. Debe imprimir el resultado en la web con el
+        símbolo $ adelante. <br>
+        <button type="button" name="button" onclick="simulador_oculto('ganancias_perdidas')">MOSTRAR</button>
+        <div id="ganancias_perdidas" style="display:none">
+          <div class="ejercicio_ejecutable">
+            <div class="simulador_code">
+              <pre>
+                     <code>
+
+var income= prompt("¿Cuánto es tu ingreso?");//400
+var costs= prompt("¿Cuánto es el costo?");//65
+var taxPercent= prompt("¿Cuánto es el porcentaje (%) de impuestos?");//18
+var grossProfit= income-costs;//335
+var tax= grossProfit* taxPercent/100;//60.3
+var netIncome= grossProfit-tax;
+
+document.write("Tu ganancia neta es de $ "+ netIncome);
+                     </code>
+
+                   </pre>
+
+            </div>
+            <button type="button" onclick="ejercicio3()">Ejecutar</button>
+          </div>
+        </div>
+      </div>
+
+      <!--ejercicio4-->
+      <div class="realizar">
+        <b>Iniciales:</b> Crea un programa que pide el nombre y apellido al
+        usuario. El usuario debe ingresar dos palabras separadas por
+        un espacio, por ejemplo: "Ana Martinez". El programa debe
+        devolver las iniciales en mayúsculas. Veamos unos ejemplos:
+        "ana martinez" y "Ana Martinez" devuelven las iniciales "AM".
+        "Michelle Seguil" y "michelle seguil" devuelven "MS". <br>
+        <button type="button" name="button" onclick="simulador_oculto('iniciales')">MOSTRAR</button>
+        <div id="iniciales" style="display:none">
+          <div class="ejercicio_ejecutable">
+            <div class="simulador_code">
+              <pre>
+                   <code>
+
+var name= prompt("¿Cuál es tu nombre y apellido?");
+var firstInitial= name.slice(0,1);
+var secondInitialPosition= name.indexOf(" ")+1;
+var secondInitial= name.slice(secondInitialPosition, secondInitialPosition+1);
+
+console.log("firstInitial+secondInitial");
+document.write("tus iniciales son: "+ firstInitial.toUpperCase() +" "
++secondInitial.toUpperCase());
+                   </code>
+                 </pre>
+            </div>
+            <button type="button" onclick="ejercicio4()">Ejecutar</button>
+          </div>
+        </div>
+      </div>
+      <div class="regresar_menu">
+        <span class="regresar"> Regresar a menu Unidad 02 <a href="index.html"> <img src="../../img/inicio.png" width="35px" height="35px"></a></span>
+      </div>
+  </div>
+</body>
+<script type="text/javascript" src="../../js/Practicas/app.js">
+
+</script>
+
+</html>
