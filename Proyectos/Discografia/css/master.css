@@ -1,0 +1,140 @@
+/* Estilos para body */
+body{
+  background-color: #A8D6CD;
+  font-family: fantasy;
+  color: #F4F4F4;
+}
+/* Estilos para los titulos */
+h1, h2, h3, h4{
+  text-align: center;
+  color: #595959;
+}
+h5{
+  padding-left: 15px;
+  color: #F4F4F4;
+  text-align: left;
+}
+/* Estilos para el contenedor */
+#contenedor{
+  left: 0;
+  margin: 0;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  height: 90%;
+  display: block;
+  overflow-y: auto;
+  position: relative;
+}
+/* Estilos para las filas tipo tabla*/
+.fila{
+  width: 100%;
+  display: table;
+  border-spacing:16px;
+}
+/* Estilos para cada fila, cada fila tiene un alto diferente*/
+#f1{
+  height: 400px;
+}
+#f2{
+  height: auto;
+}
+/* Estilos para las tarjetas que tendran el contenido */
+.tarjeta{
+  border-radius: 25px 80px;
+  background-color: #6984AD;
+  display: table-cell;
+  height: 100%;
+  padding: 10px;
+  vertical-align: middle;
+}
+.contenedor-tarjeta{
+  padding: 20px;
+}
+/* Los siguientes id, definiran el ancho de cada tarjeta */
+#referencia{
+  width: 100%;
+}
+#lista{
+  width: 69%;
+}
+#portada{
+  width: 29%;
+}
+
+#pie-pagina{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+}
+
+/* Estilos para la tabla y lista */
+table{
+  margin-left: 5%;
+  width: 90%;
+  border-collapse: collapse;
+}
+table img{
+  width: 125px;
+  height: 125px;
+}
+th{
+  background-color: #595959;
+  width: 25%;
+  border: 1px solid #ffffff;
+  color: #F4F4F4;
+}
+td{
+  border: 1px solid #595959;
+  color: #595959;
+}
+tr:hover {
+  background-color: #ddd;
+}
+li,tr{
+  background-color: #F4F4F4;
+  color: #595959;
+  margin-right: 40px;
+}
+li{
+    height: 20px;
+    list-style: none;
+
+}
+li img{
+  width: 25px;
+  height: 20px;
+  float: right;
+}
+li:nth-child(even), tr:nth-child(even){
+  background-color: #A8C7D6;
+  color: black;
+}
+
+/* Estilos nos permitiran centrar el contenido en las tarjetas */
+.middle-center{
+  text-align: center;
+  vertical-align: middle;
+}
+.middle-left{
+  text-align: left;
+  vertical-align: middle;
+}
+.disponible{
+  text-align: center;
+  display: inline;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+#pie-pagina div{
+  color: #6984AD;
+  display: inline-block;
+  vertical-align: middle;
+  height:100%;
+}

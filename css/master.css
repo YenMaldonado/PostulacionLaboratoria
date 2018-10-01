@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 body{
   background-color: rgba(251, 241, 156, 0.79);
 }
@@ -114,4 +107,7 @@ list-style: none;
   margin-top: 10px;
   float: right;
   margin-bottom: 40px;
+}
+#pie-pagina{
+  text-align: center;
 }

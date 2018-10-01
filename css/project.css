@@ -1,0 +1,104 @@
+.margen{
+  width: 80%;
+  background-color: white;
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.menu table{
+  width: 100%;
+}
+
+.menu table td{
+  width: 33%;
+  text-align: center;
+  border-left: 1px solid rgb(156, 56, 164);
+}
+
+.encabezado{
+  background-color: rgb(143, 85, 181);
+  color:white;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+.introduccion{
+  text-align: justify;
+}
+
+.caja {
+  width: 40%;
+  height: 200px;
+  display: table-cell;
+  margin: 4%;
+  background-color: rgb(208, 149, 235);
+  border: 10px solid white;
+  padding: 10px;
+  text-align: justify;
+}
+
+.caja >a{
+  text-decoration: none;
+}
+
+.contenedor{
+height: 200px;
+width:100%;
+}
+/*experiencia laboral y profesional*/
+body{
+  background-color: rgb(252, 199, 252);
+}
+.margen #cv{
+  background-color: rgb(206, 138, 245)
+  width:80%;
+  margin-left: 10%;
+}
+.tabla table {
+  width: 100%
+}
+
+.tabla td{
+  width: 33%;
+  text-align: center;
+  border: 1px solid rgb(143, 85, 181);
+}
+.tabla_expert table th{
+  width: 33%;
+  border:2px solid white;
+  background-color: rgb(143, 85, 181);
+  text-align: center;
+}
+.empresa{
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid rgb(143, 85, 181);
+}
+.descripcion{
+  text-align: justify;
+
+}
+.sin_decoracion li{
+  list-style: none;
+  font-size: 15px;
+}
+
+.cursos_tech>td{
+  background-color: rgba(177, 8, 224, 0.5);
+}
+#derecha{
+  text-align: right;
+}
+.centrar{
+  text-align: center;
+  font-family: fantasy;
+}
+.texto{
+  text-align: justify;
+}
+.iconos{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  float: right;
+  margin-bottom: 40px;
+}
